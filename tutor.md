@@ -40,7 +40,7 @@
 - step1: git reflog  or  git log
 > reflog will show all commit history with concise style, and log will show more information about commit history
 > the first column is the id of every version
-'''git
+```git
 8dbf72d (HEAD -> master, origin/master, origin/HEAD) HEAD@{0}: commit: fix some error.
 5ffbda0 HEAD@{1}: commit: update the style of content
 2a26626 HEAD@{2}: commit: add some content about how to merge the local branch and the remote branch if they have conflict on content.
@@ -56,5 +56,5 @@ c55683d HEAD@{11}: commit: create new branch
 f4e2716 HEAD@{12}: checkout: moving from master to tutor_branch
 f4e2716 HEAD@{13}: commit: add a file
 a57ff04 HEAD@{14}: clone: from https://github.com/stephenlee4413/githubTutor.git
-'''
+```
 - step2: git reset --hard 602800d
