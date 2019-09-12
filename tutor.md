@@ -24,7 +24,7 @@
 > """delete the new branch located the current computer"""
 - step13: git push
 > """push the newest master to remote"""
-- step14:git branch origin :test_github
+- step14:git push origin :test_github
 > """delete the remote branch named test_github
 
 
