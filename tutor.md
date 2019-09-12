@@ -1,4 +1,4 @@
-##github tutor
+## github tutor
 ### show a system operation about how to use github for working
 ---
 - step1: mkdir github_tutor 
