@@ -58,3 +58,6 @@ f4e2716 HEAD@{13}: commit: add a file
 a57ff04 HEAD@{14}: clone: from https://github.com/stephenlee4413/githubTutor.git
 ```
 - step2: git reset --hard 602800d
+> if you rollback to 602800d version, you will get some errors when the next time push operation occured. step 3 show how to overcome it
+- step3: git push -f
+> force push to the remote repository,skip other version in the middle.
