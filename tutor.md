@@ -25,3 +25,11 @@ step13: git push
 """push the newest master to remote"""
 step14:git branch origin :test_github
 """delete the remote branch named test_github
+
+
+### if the remote repository has been modified, the local master has not been changed, how shoud i do for the next operation(modify the local file,then push to the remote)
+step1: git fetch origin/master 
+“”“this will get the remote origin/master branch to the local,but you will not see the obvious changes,because you need continue the step2."""
+step2: git merge master origin/master
+"""the step will merge master and origin/master to master. then you will see the same content of master branch between local and remote."""
+
