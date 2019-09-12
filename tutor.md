@@ -35,3 +35,26 @@
 - step2: git merge master origin/master
 > """the step will merge master and origin/master to master. then you will see the same content of master branch between local and remote."""
 
+### if you want to rollback to last change or more elderly version, there will be a good example
+---
+- step1: git reflog  or  git log
+> reflog will show all commit history with concise style, and log will show more information about commit history
+> the first column is the id of every version
+'''git
+8dbf72d (HEAD -> master, origin/master, origin/HEAD) HEAD@{0}: commit: fix some error.
+5ffbda0 HEAD@{1}: commit: update the style of content
+2a26626 HEAD@{2}: commit: add some content about how to merge the local branch and the remote branch if they have conflict on content.
+9aba5d3 HEAD@{3}: merge origin/master: Merge made by the 'recursive' strategy.
+602800d HEAD@{4}: commit: modify the tutor.md
+8bc2a37 HEAD@{5}: merge test_delete: Fast-forward
+c55683d HEAD@{6}: checkout: moving from test_delete to master
+8bc2a37 HEAD@{7}: commit: delete branch
+c55683d HEAD@{8}: checkout: moving from master to test_delete
+c55683d HEAD@{9}: merge tutor_branch: Fast-forward
+f4e2716 HEAD@{10}: checkout: moving from tutor_branch to master
+c55683d HEAD@{11}: commit: create new branch
+f4e2716 HEAD@{12}: checkout: moving from master to tutor_branch
+f4e2716 HEAD@{13}: commit: add a file
+a57ff04 HEAD@{14}: clone: from https://github.com/stephenlee4413/githubTutor.git
+'''
+- step2: git reset --hard 602800d
