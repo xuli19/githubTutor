@@ -1,5 +1,5 @@
 ## github tutor
-### show a system operation about how to use github for working
+### show a systematic operation about how to use github for collaborative working
 ---
 - step1: mkdir github_tutor 
 > """create a directory for github repository"""
